@@ -3,45 +3,46 @@
     margin: 0;
     padding: 0;
     text-align: center;
-  
+
 }
 
-body, html{
-    background-color: orange;
+body, html {
+    background-color: white;
     width: 100%;
     height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.container{
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+.container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: 
-    "main main main"
-    "main main main"
-    "footer footer footer";
+    grid-template-areas: "main main main" "main main main" "footer footer footer";
     height: 100%;
 }
 
-.main{
+.main {
     grid-area: main;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.main *{
+.main * {
     margin: 8px 0;
 }
 
-input{
+input {
     height: 40px;
     width: 88px;
     font-size: 32px;
 }
 
-.main__button{
+.main__button {
     position: relative;
     width: 90%;
     max-width: 650px;
@@ -53,30 +54,33 @@ input{
     padding: 16px 24px;
     box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
 }
-.main__button:hover{
-    background: hsl(16, 100%, 45%)
-  }
 
-  .main__button:active {
+.main__button:hover {
+    background: hsl(16, 100%, 45%)
+}
+
+.main__button:active {
     background: hsl(16, 100%, 40%);
     top: 3px;
     left: -3px;
     box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
-  }
-  .main__button:active::before{
+}
+
+.main__button:active::before {
     border: solid 3px transparent;
     border-right: solid 3px hsl(16, 100%, 30%);
     border-left-width: 0;
     left: -3px;
-  }
+}
 
-  .main__button:active::after{
+.main__button:active::after {
     border: solid 3px transparent;
     border-top: solid 3px hsl(16, 100%, 30%);
     border-bottom-width: 0;
     bottom: -3px;
-  }
-  .main__button::before{
+}
+
+.main__button::before {
     position: absolute;
     content: "";
     height: 0;
@@ -87,9 +91,9 @@ input{
     background: none;
     top: 0;
     left: -6px;
-  }
+}
 
-  .main__button::after{
+.main__button::after {
     position: absolute;
     content: "";
     height: 0;
@@ -99,10 +103,10 @@ input{
     border-bottom-width: 0;
     right: 0;
     bottom: -6px;
-  }
+}
 
 
-footer{
+footer {
     grid-area: footer;
     display: flex;
     flex-flow: column wrap;
@@ -110,28 +114,23 @@ footer{
 }
 
 
-
-@media screen and (min-width: 769px){
-    body{
-    background-image: url("../img/prl.jpg");
-    background-position: center;
-    background-size: contain;  
-    background-repeat: no-repeat;
+@media screen and (min-width: 769px) {
+    body {
+        background-image: url("../img/prl.jpg");
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
-    .container{
-    grid-template-areas: 
-    ". . ."
-    ". main ."
-    ". footer ."
-    ;
+    .container {
+        grid-template-areas: ". . ." ". main ." ". footer .";
     }
 
-    .main{
+    .main {
         background-color: rgb(200, 200, 200, 0.8);
     }
 
-    .footer{
+    .footer {
         flex-flow: row wrap;
     }
 
