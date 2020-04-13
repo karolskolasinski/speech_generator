@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     text-align: center;
-
 }
 
 body, html {
@@ -13,8 +12,16 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
+@font-face {
+    font-family: 'Night Bits';
+    src: url("../fonts/nightbits-webfont.woff2") format('woff2'),
+    url("../fonts/nightbits-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Russo One', sans-serif;
+    font-family: 'Night Bits', sans-serif;
 }
 
 .container {

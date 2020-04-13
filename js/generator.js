@@ -1,5 +1,4 @@
-let firstSegment = [
-    "Koleżanki i koledzy,",
+let firstSegment = ["Koleżanki i koledzy,",
     "Z drugiej strony,",
     "Podobnie,",
     "Nie zapominajmy jednak o tym że,",
@@ -36,8 +35,7 @@ let thirdSegment = [" zmusza nas do przeanalizowania",
     " przedstawia interesującą próbę sprawdzenia",
     " pociąga za sobą proces wdrażania i unowocześniania",
 ];
-let fourthSegment = [
-    " istniejących warunków administracyjno-finansowych. ",
+let fourthSegment = [" istniejących warunków administracyjno-finansowych. ",
     " dalszych kierunków rozwoju. ",
     " systemu powszechnego uczestnictwa. ",
     " postaw uczestników wobec zadań stawianych przez organizację. ",
@@ -49,3 +47,5 @@ let fourthSegment = [
     " form oddziaływania. ",
     " kierunków postępu prac. ",
 ];
+
+
