@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap" rel="stylesheet">
     <title>Speech Generator</title>
 </head>
 <body>
 <div class="container">
-    <main class="main">
+    <header class="headerbox">
+        <img class="headerbox__logo" src="img/logo.jpg" alt="logo">
+        <div class="headerbox__title">GENERATOR</div>
+        <div class="headerbox__subtitle">PRZEMÓWIEŃ</div>
+    </header>
+
+
+    <main class="mainbox">
+        <hr class="mainbox__hr">
 
         <h1>Rewelacyjny generator przemówień!</h1>
 
@@ -23,11 +32,11 @@
         <button type="button" name="number_of_sentences" class="main__button">Generuj przemówienie!</button>
 
     </main>
-    <footer>
+    <footer class="footerbox">
         <span><strong>2020 Karol Skolasiński & Michał Marchewa.</strong></span>
         <span><strong>&copy; Wszelkie prawa zastrzeżone</strong></span>
     </footer>
 </div>
- <script src="js/generator.js"></script>
+<script src="js/generator.js"></script>
 </body>
 </html>
