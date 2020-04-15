@@ -3,7 +3,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
 }
 
 body, html {
@@ -19,6 +18,20 @@ body, html {
     font-style: normal;
 }
 
+input {
+    width: 15vw;
+    font-size: 8vw;
+    border: none;
+}
+
+.ml-2 {
+    margin-left: 2vw;
+}
+
+.mr-2 {
+    margin-right: 2vw;
+}
+
 
 /*--------------------SMALL SCREEN--------------------*/
 .container {
@@ -26,19 +39,17 @@ body, html {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-image: linear-gradient(#fff, #eee, #bbb);
 }
 
 .headerbox {
     display: flex;
-    justify-content: space-between;
 }
 
 .headerbox__logo {
     width: 35%;
     height: auto;
     margin: auto;
+    padding: 4vw;
 }
 
 .headerbox__logo img {
@@ -49,35 +60,26 @@ body, html {
 .headerbox__titles {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 65%;
-  
+    height: min-content;
+    padding-top: 9vw;
 }
 
 .headerbox__title {
-    font-size: 1.7rem;
+    font-size: 7vw;
     font-family: 'BioRhyme', serif;
-
+    letter-spacing: 0.5vw;
 }
 
 .headerbox__subtitle {
-    font-size: 1.4rem;
+    font-size: 6vw;
     font-family: 'BioRhyme', serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.5vw;
     color: rgba(240, 240, 240, 1);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-
-.mainbox {
-    margin: 8px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-grow: 1;
-}
-
-.mainbox__hr {
+.hr-line {
     border: 0;
     height: 2px;
     width: 80vw;
@@ -85,23 +87,79 @@ body, html {
     background-color: black;
 }
 
-.mainbox h1{
-    font-size: auto;
+.mainbox {
+    margin: 8px auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.mainbox h2{
-    font-size: 1.2rem;
+.mainbox__header, .mainbox__subheader {
+    padding: 0 2vh 2vh;
 }
 
-input {
-    height: 40px;
-    width: 88px;
-    font-size: 32px;
-    border: solid 1px #000;
-    border-radius: 8px;
+.mainbox__content {
+    padding: 0 4vh 2vh;
+    text-align: justify;
 }
 
-/*BUTTON*/
+.mainbox__input {
+    padding: 0 4vh 2vh;
+}
+
+.mainbox__input_title, .mainbox__button {
+    padding: 0 0 2vh;
+}
+
+.mainbox__buttons {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2vh;
+}
+
+.mainbox__button_minus, .mainbox__button_plus {
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.splitter {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
+.content__center {
+    text-align: center;
+}
+
+.mainbox h1 {
+    font-family: 'Merriweather', serif;
+}
+
+.mainbox h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/*INCREASE-DECREASE BUTTONS*/
+.value-button {
+    width: 9.5vw;
+    height: 9.5vw;
+    background: #eee;
+    user-select: none;
+}
+
+.value-button:hover {
+    cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*SUBMIT BUTTON*/
 .main__button {
     position: relative;
     width: 90%;
@@ -166,28 +224,16 @@ input {
 }
 
 .footerbox {
-    border-top: solid 2px black;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    font-weight: bold;
-    margin-top: 8px;
-    font-size: 0.7rem;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
 }
 
-/* 
 .footerbox__programists {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: fit-content;
-    padding-top: 8vw;
+    font-size: small;
 }
 
 .footerbox__rights {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: fit-content;
-    padding-top: 8vw;
-} */
+    font-size: small;
+}

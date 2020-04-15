@@ -6,8 +6,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
     <title>Speech Generator</title>
 </head>
+
 <body>
 <div class="container">
     <header class="headerbox">
@@ -18,29 +21,67 @@
         </div>
     </header>
 
-    <main class="mainbox">
-        <hr class="mainbox__hr">
+    <div class="splitter">
+        <hr class="hr-line">
+    </div>
 
-        <h1>Rewelacyjny generator przemówień!</h1>
+    <main class="mainbox content__center">
+        <div class="mainbox__header">
+            <h1>Jak stworzyć geniealne przemówienie?</h1>
+        </div>
+        <div class="mainbox__content">
+            <p>W okresie stanu wojennego w Polsce w latach 1981-1982, środowiska opozycyjne wydały drukiem poradnik,
+                będący w założeniach satyrą na ustrój PRL, który zawierał zasady tworzenia komunistycznej nowomowy i
+                pozwalał na przykład na skonstruowanie kilkunastogodzinnego przemówienia, zawierał on 4 zbiory (A, B, C,
+                D) ze
+                zdaniami, wybranymi m.in. z przemówień działaczy PZPR. Dowolne łączenie zdań z każdego zbioru po kolei
+                tworzyło gotowe formułki (bez merytorycznej treści i znaczenia).</p>
+        </div>
+        <div class="mainbox__subheader">
+            <h2>Świetnie trafiłeś!</h2>
+        </div>
+        <div class="mainbox__content">
+            <p>Jeżeli masz do przygotowania przemówienie, będziesz używał typowej korpomowy, a wiesz, że i tak
+                korposzczury nie będą cię słuchać - użyj naszego generatora.</p>
+        </div>
 
-        <p>Masz do przygotowania przemówienie?</p>
-        <p>Będziesz przemawiał w typowej korpomowie?</p>
-        <p>Wiesz, że i tak korposzczury nie będą Cię słuchać?</p>
+        <form class="mainbox__input">
+            <div class="mainbox__input_title">
+                <p>Podaj liczbę zdań:</p>
+            </div>
 
-        <h2>Świetnie trafiłeś!</h2>
+            <div class="mainbox__buttons">
+                <div class="value-button" id="decrease" onclick="decreaseValue()">
+                    <div class="mainbox__button_minus">-</div>
+                </div>
 
-        <label>Podaj liczbę zdań: <input type="number" value="number_of_sentences"></label>
-        <button type="button" name="number_of_sentences" class="main__button">Generuj przemówienie!</button>
+                <label for="number">
+                    <input class="content__center ml-2 mr-2" type="number" id="number" value="20" min="1" max="99">
+                </label>
 
+                <div class="value-button" id="increase" onclick="increaseValue()">
+                    <div class="mainbox__button_plus">+</div>
+                </div>
+            </div>
+
+            <div class="mainbox__button">
+                <button type="submit" name="number_of_sentences" class="main__button">Generuj przemówienie!</button>
+            </div>
+        </form>
     </main>
 
-    <footer class="footerbox">
+    <div class="splitter">
+        <hr class="hr-line">
+    </div>
+
+    <footer class="footerbox content__center">
         <div class="footerbox__programists">2020 Karol Skolasiński & Michał Marchewa</div>
         <div class="footerbox__rights">&copy; Wszelkie prawa zastrzeżone</div>
     </footer>
 </div>
 
 <script src="js/generator.js"></script>
+<script src="js/inc-dec.js"></script>
 
 </body>
 </html>
