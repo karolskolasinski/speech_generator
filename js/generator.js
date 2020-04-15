@@ -35,6 +35,7 @@ let thirdSegment = [" zmusza nas do przeanalizowania",
     " przedstawia interesującą próbę sprawdzenia",
     " pociąga za sobą proces wdrażania i unowocześniania",
 ];
+
 let fourthSegment = [" istniejących warunków administracyjno-finansowych. ",
     " dalszych kierunków rozwoju. ",
     " systemu powszechnego uczestnictwa. ",
