@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 body, html {
@@ -24,13 +25,13 @@ body, html {
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-between;
+    background-image: linear-gradient(#fff, #eee, #bbb);
 }
 
 .headerbox {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -38,7 +39,6 @@ body, html {
     width: 35%;
     height: auto;
     margin: auto;
-    padding: 5vw;
 }
 
 .headerbox__logo img {
@@ -51,27 +51,25 @@ body, html {
     flex-direction: column;
     justify-content: space-around;
     width: 65%;
-    height: fit-content;
-    padding-top: 8vw;
+  
 }
 
 .headerbox__title {
-    font-size: 8vw;
+    font-size: 1.7rem;
     font-family: 'BioRhyme', serif;
 
 }
 
 .headerbox__subtitle {
-    font-size: 5vw;
+    font-size: 1.4rem;
     font-family: 'BioRhyme', serif;
-    letter-spacing: 1.8vw;
+    letter-spacing: 2px;
     color: rgba(240, 240, 240, 1);
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 
 .mainbox {
-    min-height: 50vh;
     margin: 8px auto;
     display: flex;
     flex-direction: column;
@@ -87,11 +85,20 @@ body, html {
     background-color: black;
 }
 
+.mainbox h1{
+    font-size: auto;
+}
+
+.mainbox h2{
+    font-size: 1.2rem;
+}
+
 input {
     height: 40px;
     width: 88px;
     font-size: 32px;
     border: solid 1px #000;
+    border-radius: 8px;
 }
 
 /*BUTTON*/
@@ -159,15 +166,16 @@ input {
 }
 
 .footerbox {
+    border-top: solid 2px black;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     font-weight: bold;
     margin-top: 8px;
+    font-size: 0.7rem;
 }
 
-
+/* 
 .footerbox__programists {
     display: flex;
     flex-direction: column;
@@ -182,4 +190,4 @@ input {
     justify-content: space-around;
     height: fit-content;
     padding-top: 8vw;
-}
+} */
