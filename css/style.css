@@ -24,6 +24,10 @@ input {
     border: none;
 }
 
+input:focus {
+    outline-color: #999999;
+}
+
 .ml-2 {
     margin-left: 2vw;
 }
