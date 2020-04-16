@@ -36,6 +36,46 @@ input:focus {
     margin-right: 2vw;
 }
 
+::selection {
+    background: transparent;
+    text-shadow: #000 0 0 2px;
+}
+
+/*HREF STYLE*/
+.link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    padding: 1px 5px;
+}
+
+a.link.effect:before, a.link.effect:after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    transition: all 0.3s ease;
+}
+
+a.link.effect:before {
+    top: -2.5%;
+    left: -1%;
+    border-top: 1px solid #999999;
+    border-left: 1px solid #999999;
+}
+
+a.link.effect:after {
+    bottom: -2.5%;
+    right: -1%;
+    border-bottom: 1px solid #999999;
+    border-right: 1px solid #999999;
+}
+
+a.link.effect:hover:before, a.link.effect:hover:after {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+}
 
 /*--------------------SMALL SCREEN--------------------*/
 .container {
@@ -146,14 +186,14 @@ input:focus {
 }
 
 /*INCREASE-DECREASE BUTTONS*/
-.value-button {
+.mainbox__value_button {
     width: 9.5vw;
     height: 9.5vw;
     background: #eee;
     user-select: none;
 }
 
-.value-button:hover {
+.mainbox__value_button:hover {
     cursor: pointer;
 }
 
