@@ -171,6 +171,7 @@ a.link.effect:hover:before, a.link.effect:hover:after {
     align-items: center;
     justify-content: center;
     height: inherit;
+    font-size: x-large;
 }
 
 .content__center {
