@@ -123,6 +123,11 @@ a.link.effect:hover:before, a.link.effect:hover:after {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+.splitter {
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+}
+
 .hr-line {
     border: 0;
     height: 2px;
@@ -168,20 +173,11 @@ a.link.effect:hover:before, a.link.effect:hover:after {
     height: inherit;
 }
 
-.splitter {
-    margin-top: 1vh;
-    margin-bottom: 3vh;
-}
-
 .content__center {
     text-align: center;
 }
 
-.mainbox h1 {
-    font-family: 'Merriweather', serif;
-}
-
-.mainbox h2 {
+.mainbox h1, .mainbox h2 {
     font-family: 'Merriweather', serif;
 }
 
