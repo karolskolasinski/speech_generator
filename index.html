@@ -52,7 +52,7 @@
                 korposzczury nie będą cię słuchać - użyj naszego generatora.</p>
         </div>
 
-        <form class="mainbox__input">
+        <div class="mainbox__input">
             <div class="mainbox__input_title">
                 <p>Podaj liczbę zdań:</p>
             </div>
@@ -63,7 +63,7 @@
                 </div>
 
                 <label for="number">
-                    <input class="content__center ml-2 mr-2" type="number" id="number" value="20" min="1" max="99">
+                    <input class="content__center ml-2 mr-2" type="number" id="number" value="20" min="7" max="99">
                 </label>
 
                 <div class="mainbox__value_button" id="increase" onclick="increaseValue()">
@@ -72,9 +72,9 @@
             </div>
 
             <div class="mainbox__button">
-                <button type="submit" name="number_of_sentences" class="main__button">Generuj przemówienie!</button>
+                <button onclick="generator()" name="number_of_sentences" class="main__button">Generuj przemówienie!</button>
             </div>
-        </form>
+        </div>
     </main>
 
     <div class="splitter">

@@ -12,7 +12,7 @@ let firstSegment = ["Koleżanki i koledzy,",
     "Założenia naszej misji, a także"
 ];
 
-var secondSegment = [" realizacja nakreślonych zadań programowych",
+let secondSegment = [" realizacja nakreślonych zadań programowych",
     " zakres i miejsce szkolenia kadr",
     " stały wzrost ilości i zakresu naszej aktywności",
     " aktualna struktura organizacji",
@@ -49,4 +49,17 @@ let fourthSegment = [" istniejących warunków administracyjno-finansowych. ",
     " kierunków postępu prac. ",
 ];
 
+function generator() {
 
+    let header = document.querySelector(".mainbox__header");
+
+    if (header.classList.contains("mainbox__header")) {
+        header.className = "mainbox__header hidden";
+        document.querySelector(".mainbox__content").className = "mainbox__content hidden";
+    }
+
+    let loop = document.getElementsByTagName("input").valueOf().item(0).valueAsNumber;
+
+    document.querySelector(".mainbox__subheader").innerHTML = "<h2></h2>";
+
+}

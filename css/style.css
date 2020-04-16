@@ -41,6 +41,10 @@ input:focus {
     text-shadow: #000 0 0 2px;
 }
 
+.hidden {
+    display: none;
+}
+
 /*HREF STYLE*/
 .link {
     text-decoration: none;
