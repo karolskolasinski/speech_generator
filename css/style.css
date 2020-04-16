@@ -270,13 +270,8 @@ input[type=number]::-webkit-outer-spin-button {
     display: flex;
     flex-direction: column;
     padding-bottom: 2vh;
-    padding-top: 2vh;
 }
 
 .footerbox__programists {
-    font-size: small;
-}
-
-.footerbox__rights {
     font-size: small;
 }
