@@ -205,20 +205,23 @@ input[type=number]::-webkit-outer-spin-button {
     width: 90%;
     max-width: 650px;
     margin: 0 auto;
-    background: orangered;
+    background: #b75236;
     height: 64px;
     outline: none;
     border: none;
     padding: 16px 24px;
-    box-shadow: -6px 6px 0 hsl(16, 100%, 30%);
+    box-shadow: -6px 6px 0 hsl(17, 100%, 24%);
+    color: #fff;
+    font-family: inherit;
+    font-size: 2vh;
 }
 
 .main__button:hover {
-    background: hsl(16, 100%, 45%)
+    background: hsl(13, 54%, 46%)
 }
 
 .main__button:active {
-    background: hsl(16, 100%, 40%);
+    background: hsl(13, 54%, 46%);
     top: 3px;
     left: -3px;
     box-shadow: -3px 3px 0 hsl(16, 100%, 30%);
