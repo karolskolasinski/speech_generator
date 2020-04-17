@@ -78,7 +78,7 @@ function generator() {
 
 
 function randomSentenceFormSegment(segment) {
-    return segment[Math.round(Math.random() * segment.length)];
+    return segment[Math.floor(Math.random() * segment.length)];
 }
 
 function randomSentenceFormAllSegments() {
