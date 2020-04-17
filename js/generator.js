@@ -58,8 +58,32 @@ function generator() {
         document.querySelector(".mainbox__content").className = "mainbox__content hidden";
     }
 
-    let loop = document.getElementsByTagName("input").valueOf().item(0).valueAsNumber;
+    let userNumberOfSentences = document.getElementsByTagName("input").valueOf().item(0).value;
 
-    document.querySelector(".mainbox__subheader").innerHTML = "<h2></h2>";
+    let firstSentence = firstSegment[0] +
+        randomSentenceFormSegment(secondSegment) +
+        randomSentenceFormSegment(thirdSegment) +
+        randomSentenceFormSegment(fourthSegment);
 
+    let firstThreeSentences = firstSentence + randomSentenceFormAllSegments() + randomSentenceFormAllSegments();
+    let otherSentences = "";
+
+    for (let i = 0; i < userNumberOfSentences - 3; i++) {
+        otherSentences += randomSentenceFormAllSegments();
+    }
+
+    document.querySelector(".mainbox__subheader").innerHTML = "<h2>" + firstThreeSentences + "</h2>";
+    document.querySelector("#speech").innerHTML = otherSentences;
+}
+
+
+function randomSentenceFormSegment(segment) {
+    return segment[Math.round(Math.random() * segment.length)];
+}
+
+function randomSentenceFormAllSegments() {
+    return randomSentenceFormSegment(firstSegment) +
+        randomSentenceFormSegment(secondSegment) +
+        randomSentenceFormSegment(thirdSegment) +
+        randomSentenceFormSegment(fourthSegment);
 }
