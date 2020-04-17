@@ -12,3 +12,9 @@ function decreaseValue() {
     value--;
     document.getElementById('number').value = value;
 }
+
+function SelectAll(id)
+{
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+}
