@@ -13,8 +13,8 @@ function decreaseValue() {
     document.getElementById('number').value = value;
 }
 
-function SelectAll(id)
+function selectAll()
 {
-    document.getElementById(id).focus();
-    document.getElementById(id).select();
+    document.getElementById('number').focus();
+    document.getElementById('number').select();
 }
