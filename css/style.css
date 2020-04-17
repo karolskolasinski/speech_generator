@@ -279,3 +279,10 @@ input[type=number]::-webkit-outer-spin-button {
 .footerbox__programists {
     font-size: small;
 }
+
+@media screen and (min-width: 786px){
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+}
