@@ -10,14 +10,6 @@ body, html {
     font-family: 'Open Sans', sans-serif;
 }
 
-@font-face {
-    font-family: 'Night Bits';
-    src: url("../fonts/nightbits-webfont.woff2") format('woff2'),
-    url("../fonts/nightbits-webfont.woff") format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 input {
     width: 15vw;
     font-size: 8vw;
@@ -280,6 +272,7 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: small;
 }
 
+/*--------------------WIDE SCREEN--------------------*/
 @media screen and (min-width: 786px){
     .container{
         width: 80%;

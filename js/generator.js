@@ -58,17 +58,18 @@ function generator() {
         document.querySelector(".mainbox__content").className = "mainbox__content hidden";
     }
 
-    let userNumberOfSentences = document.getElementsByTagName("input").valueOf().item(0).value;
-
     let firstSentence = firstSegment[0] +
         randomSentenceFormSegment(secondSegment) +
         randomSentenceFormSegment(thirdSegment) +
         randomSentenceFormSegment(fourthSegment);
 
-    let firstThreeSentences = firstSentence + randomSentenceFormAllSegments() + randomSentenceFormAllSegments();
+    let firstThreeSentences = firstSentence +
+        randomSentenceFormAllSegments() +
+        randomSentenceFormAllSegments();
+
     let otherSentences = "";
 
-    for (let i = 0; i < userNumberOfSentences - 3; i++) {
+    for (let i = 0; i < parseInt(document.getElementById('number').value, 10) - 3; i++) {
         otherSentences += randomSentenceFormAllSegments();
     }
 
